@@ -93,15 +93,16 @@ st.sidebar.markdown(
     "• Server Runtime: Streamlit Local Laboratory\n"
     "• Database Ledger: `fomc_cleaned_data.json`"
 )
-
 # --- 5. MAIN DASHBOARD CONTENT HEADERS ---
-st.title("📑 Unsupervised Language Analytics Engine")
-st.subheader("Macroeconomic Policy Shifts & Policy Regime Discontinuity Tracker")
-st.markdown(
-    "This engine tracks structural text adjustments between sequential FOMC minutes using "
-    "**TF-IDF Feature Vectorization** and **Cosine Distance Vector Space Analysis**. "
-    "Spikes represent structural vocabulary adjustments across sequential policy meetings."
-)
+st.title("Monetary Policy NLP Engine")
+st.subheader("Unsupervised Macro Regime Detection & Automated Narrative Attribution")
+
+st.markdown("""
+**Strategic Overview:** This unsupervised architecture eliminates human interpretive latency in central bank communications. By mathematically vectorizing FOMC transcripts, the engine isolates routine policy noise and automatically extracts **High-Variance Text Drivers** during systemic regime shifts.
+
+**Pipeline Integration:** Designed as a scalable data foundation, the engine translates qualitative central bank text into continuous, quantitative signals. These outputs are optimized for seamless integration into downstream machine learning pipelines, systematic risk frameworks, and automated asset allocation models.
+""")
+
 st.divider()
 
 # --- 6. ENGINE MATH PAYLOAD EXECUTION ---

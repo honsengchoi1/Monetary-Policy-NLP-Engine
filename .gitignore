@@ -4,3 +4,13 @@ src/__pycache__/
 tests/__pycache__/ 
 pipeline_audit_log.json 
 repo_audit_gatekeeper.py 
+
+# Local IDE Configurations
+.vscode/
+
+# Local Drafts and Word Documents
+docs/*.docx
+docs/*.md
+
+# Legacy Output Folders
+reports/

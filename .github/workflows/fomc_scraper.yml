@@ -2,9 +2,15 @@ name: FOMC Pipeline Automation
 
 on:
   schedule:
-    # Runs at 18:01 and 18:05 UTC (2:01 PM and 2:05 PM EDT) every Wednesday
-    - cron: '1,5 18 * * 3'
+    # Summer / EDT (UTC-4): 2:01, 2:05, and 2:15 PM EDT every Wednesday
+    - cron: '1,5,15 18 * * 3'
+    # Winter / EST (UTC-5): 2:01, 2:05, and 2:15 PM EST every Wednesday
+    - cron: '1,5,15 19 * * 3'
   workflow_dispatch: # This allows us to click a button and run it right now!
+
+concurrency:
+  group: fomc-pipeline
+  cancel-in-progress: false
 
 jobs:
   scrape-and-update:
